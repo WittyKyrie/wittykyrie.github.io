@@ -21,3 +21,19 @@ FTP服务器的搭建有各种各样的软件，且在不同的操作系统（wi
 
 ## 在Unity当中如何链接FTP服务器
 
+```c#
+
+var request = (FtpWebRequest)WebRequest.Create("ftp://192.168.1.51/encrypted_lua.zip");//向网站发送命令
+                request.Credentials = new NetworkCredential("UerName", "xxxxxx");//输入上述步骤对应的用户名以及密码
+                request.Method = WebRequestMethods.Ftp.DownloadFile;
+                var dataSavePath = Application.persistentDataPath + "/encrypted_lua.zip";//输入下载下来的数据所储存的位置
+
+                using var ftpStream = request.GetResponse().GetResponseStream();
+                using Stream fileStream = File.Create(dataSavePath);
+                ftpStream?.CopyTo(fileStream);
+                ftpStream?.Close();
+                fileStream.Close();
+}
+```
+
+以上代码就是在Unity当中通过自己编写方法来实现链接FTP服务器并进行下载的步骤

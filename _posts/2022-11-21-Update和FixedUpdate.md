@@ -1,8 +1,8 @@
 ---
-title: Update和`FixedUpdate`
+title: Update And FixedUpdate
 author: wittykyrie
 date: 2022-11-11 09:00:00 +0800
-categories: ['Update']
+categories: ['Unity']
 tags: ['Update','FixUpdate']
 render_with_liquid: false
 ---

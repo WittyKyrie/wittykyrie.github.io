@@ -7,9 +7,9 @@ tags: ['Update','FixUpdate']
 render_with_liquid: false
 ---
 
-如果你已经接触过Unity的脚本，你一定对 `Update()` 函数感到很熟悉，因为我们游戏的大部分逻辑都将在这个方法里面实现。如果你接触Unity有一段时间，那么你大概率会接触到 `FixedUpdate()`方法。
+如果你已经接触过Unity的脚本，你一定对 `Update（）` 函数感到很熟悉，因为我们游戏的大部分逻辑都将在这个方法里面实现。如果你接触Unity有一段时间，那么你大概率会接触到 ``FixedUpdate`()`方法。
 
-相对于`Update`的每一帧进行执行，`FixedUpdate()`的调用采用的是完全独立的计时器，这个独立的计时器将于Unity的物理系统同步。
+相对于`Update`的每一帧进行执行，``FixedUpdate`()`的调用采用的是完全独立的计时器，这个独立的计时器将于Unity的物理系统同步。
 
 因此，我们常常将使用`Rigidbody`的逻辑放置在`FixedUpdate`中进行调用。例如向物体施加力，移动或者跳跃等操作。
 

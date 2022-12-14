@@ -1,5 +1,5 @@
 ---
-title: AssetBundle Addressable Resources资源
+title: 'AssetBundle Addressable Resources资源'
 author: wittykyrie
 date: 2022-12-7 09:00:00 +0800
 categories: ['Unity']

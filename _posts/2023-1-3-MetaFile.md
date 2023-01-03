@@ -49,3 +49,11 @@ NativeFormatImporter:
   assetBundleVariant: 
 ```
 在上面这个文件当中，比较重要的信息就是我们上文说的资源的ID和I
+
+
+
+### 参考文章
+
+[Unity官网资源元数据](https://docs.unity3d.com/cn/current/Manual/AssetMetadata.html)
+
+[UInity文件系统的导入](https://blog.uwa4d.com/archives/USparkle_inf_UnityEngine.html)

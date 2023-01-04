@@ -53,7 +53,9 @@ TextureImporter:
 ## ImportSetting
 在Unity当中每一个资源导入需要进行不同的处理，例如对一个纹理文件和对一个CS文件处理的方式是不同的，因此Unity为我们集成了多种的[内置导入器（ImportSetting)](https://docs.unity3d.com/cn/current/Manual/BuiltInImporters.html)
 
-以下是一个Font资源的`.meta文件`中关于ImportSetting的内容，其中的大部分内容都可以在Inspector窗口进行查看。这些记录的数据代表着Unity对这个Font资源进行的处理的参数，由此我们可以知道，如果我们想在不同的项目中按照一定的格式来传资源，可以同时将资源以及它的`.meta文件`一起进行传送。
+以下是一个Font资源的`.meta文件`中关于ImportSetting的内容，其中的大部分内容都可以在Inspector窗口进行查看。
+
+这些记录的数据代表着Unity对这个Font资源进行的处理的参数，由此我们可以知道，如果我们想在不同的项目中传资源且希望能够统一格式，可以同时将资源以及它的`.meta文件`一起进行传送。无论是纹理的切片还是Fbx文件的裁剪都可以保留不用进行二次处理。
 ```yaml
 TrueTypeFontImporter:
   serializedVersion: 2
